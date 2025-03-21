@@ -66,7 +66,7 @@
             this.lblYourName.AutoSize = true;
             this.lblYourName.Location = new System.Drawing.Point(73, 82);
             this.lblYourName.Name = "lblYourName";
-            this.lblYourName.Size = new System.Drawing.Size(158, 33);
+            this.lblYourName.Size = new System.Drawing.Size(88, 18);
             this.lblYourName.TabIndex = 0;
             this.lblYourName.Text = "Your Name:";
             // 
@@ -75,7 +75,7 @@
             this.txtYourName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtYourName.Location = new System.Drawing.Point(268, 80);
             this.txtYourName.Name = "txtYourName";
-            this.txtYourName.Size = new System.Drawing.Size(436, 39);
+            this.txtYourName.Size = new System.Drawing.Size(436, 25);
             this.txtYourName.TabIndex = 1;
             this.txtYourName.TextChanged += new System.EventHandler(this.txtYourName_TextChanged);
             this.txtYourName.Leave += new System.EventHandler(this.txtYourName_Leave);
@@ -85,7 +85,7 @@
             this.lblYoB.AutoSize = true;
             this.lblYoB.Location = new System.Drawing.Point(73, 157);
             this.lblYoB.Name = "lblYoB";
-            this.lblYoB.Size = new System.Drawing.Size(175, 33);
+            this.lblYoB.Size = new System.Drawing.Size(95, 18);
             this.lblYoB.TabIndex = 2;
             this.lblYoB.Text = "Date of birth:";
             // 
@@ -94,7 +94,7 @@
             this.txtYear.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtYear.Location = new System.Drawing.Point(268, 157);
             this.txtYear.Name = "txtYear";
-            this.txtYear.Size = new System.Drawing.Size(436, 39);
+            this.txtYear.Size = new System.Drawing.Size(436, 25);
             this.txtYear.TabIndex = 3;
             this.txtYear.TextChanged += new System.EventHandler(this.txtYear_TextChanged);
             // 
@@ -104,7 +104,7 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(182, 73);
             this.btnExit.TabIndex = 6;
-            this.btnExit.Text = "&Exit";
+            this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -114,7 +114,7 @@
             // 
             // frmBaiTap1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(781, 398);
             this.Controls.Add(this.btnExit);
