@@ -156,6 +156,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frmChangeMoney";
             this.Text = "Đổi tiền";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmChangeMoney_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

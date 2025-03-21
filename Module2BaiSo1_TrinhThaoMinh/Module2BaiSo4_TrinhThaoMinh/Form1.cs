@@ -62,5 +62,16 @@ namespace Module2BaiSo4_TrinhThaoMinh
             lblResult.Text = (int.Parse(txtMoney.Text.Trim()) * vnd_eur).ToString();
 
         }
+
+        private void frmChangeMoney_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult r = MessageBox.Show("Bạn có chắc chắn muốn thoát không?", "Ex", MessageBoxButtons.OKCancel);
+            if (r == DialogResult.Cancel)
+            {
+                e.Cancel = true;
+            }
+            else e.Cancel = false;
+                
+        }
     }
 }
