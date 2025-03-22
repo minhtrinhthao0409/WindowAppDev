@@ -92,6 +92,11 @@ namespace Module2BaiSo5_TrinhThaoMinh
             lblLapTrinh.Font = new Font(lblLapTrinh.Font.Name, lblLapTrinh.Font.Size, lblLapTrinh.Font.Style ^
             FontStyle.Underline);
         }
+
+        private void frmFormater_Load(object sender, EventArgs e)
+        {
+
+        }
     }
    }
 

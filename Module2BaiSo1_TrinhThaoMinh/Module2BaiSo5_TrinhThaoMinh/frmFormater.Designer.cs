@@ -241,6 +241,7 @@
             this.Controls.Add(this.groupBoxColor);
             this.Name = "frmFormater";
             this.Text = "ĐỊnh dạng (Formater)";
+            this.Load += new System.EventHandler(this.frmFormater_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmFormater_KeyDown);
             this.groupBoxColor.ResumeLayout(false);
             this.groupBoxColor.PerformLayout();
