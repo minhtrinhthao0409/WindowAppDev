@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Module2BaiSo7_TrinhThaoMinh
+namespace Module2BaiSo8_TrinhThaoMinh
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace Module2BaiSo7_TrinhThaoMinh
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLight());
+            Application.Run(new frmGPTB1());
         }
     }
 }

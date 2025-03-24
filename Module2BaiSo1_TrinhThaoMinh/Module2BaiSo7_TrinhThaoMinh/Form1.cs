@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Module2BaiSo7_TrinhThaoMinh
 {
-    public partial class Form1 : Form
+    public partial class frmLight : Form
     {
-        public Form1()
+        public frmLight()
         {
             InitializeComponent();
         }

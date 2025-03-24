@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BFE7042D-2A12-4305-86AB-41AE98042E41}</ProjectGuid>
+    <ProjectGuid>{B4C8E8F1-9E8A-4416-841E-4B5A1D0D1B6B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Module2BaiSo7_TrinhThaoMinh</RootNamespace>
-    <AssemblyName>Module2BaiSo7_TrinhThaoMinh</AssemblyName>
+    <RootNamespace>Module2BaiSo8_TrinhThaoMinh</RootNamespace>
+    <AssemblyName>Module2BaiSo8_TrinhThaoMinh</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
