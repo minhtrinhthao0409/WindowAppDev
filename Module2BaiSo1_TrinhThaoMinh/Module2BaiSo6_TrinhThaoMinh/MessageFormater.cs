@@ -82,6 +82,18 @@ namespace Module2BaiSo6_TrinhThaoMinh
         {
             lblMessage.Visible = chkVisible.Checked;
         }
+
+        private void picSmall_Click(object sender, EventArgs e)
+        {
+            picSmall.Visible = false;
+            picBig.Visible = true;
+        }
+
+        private void picBig_Click(object sender, EventArgs e)
+        {
+            picBig.Visible = false;
+            picSmall.Visible = true;
+        }
     }
     }
 

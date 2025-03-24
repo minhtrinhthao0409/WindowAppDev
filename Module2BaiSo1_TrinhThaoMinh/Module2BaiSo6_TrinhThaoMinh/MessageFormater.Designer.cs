@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MessageFormater));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtMessage = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
@@ -44,9 +45,13 @@
             this.btnDisplay = new System.Windows.Forms.Button();
             this.lblMessage = new System.Windows.Forms.Label();
             this.chkVisible = new System.Windows.Forms.CheckBox();
+            this.picBig = new System.Windows.Forms.PictureBox();
+            this.picSmall = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.grbColor.SuspendLayout();
             this.grbAction.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBig)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSmall)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -226,11 +231,35 @@
             this.chkVisible.UseVisualStyleBackColor = true;
             this.chkVisible.CheckedChanged += new System.EventHandler(this.chkVisible_CheckedChanged);
             // 
+            // picBig
+            // 
+            this.picBig.Image = ((System.Drawing.Image)(resources.GetObject("picBig.Image")));
+            this.picBig.Location = new System.Drawing.Point(348, 267);
+            this.picBig.Name = "picBig";
+            this.picBig.Size = new System.Drawing.Size(169, 163);
+            this.picBig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBig.TabIndex = 5;
+            this.picBig.TabStop = false;
+            this.picBig.Click += new System.EventHandler(this.picBig_Click);
+            // 
+            // picSmall
+            // 
+            this.picSmall.Image = ((System.Drawing.Image)(resources.GetObject("picSmall.Image")));
+            this.picSmall.Location = new System.Drawing.Point(396, 313);
+            this.picSmall.Name = "picSmall";
+            this.picSmall.Size = new System.Drawing.Size(81, 78);
+            this.picSmall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSmall.TabIndex = 6;
+            this.picSmall.TabStop = false;
+            this.picSmall.Click += new System.EventHandler(this.picSmall_Click);
+            // 
             // MessageFormater
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(927, 598);
+            this.Controls.Add(this.picSmall);
+            this.Controls.Add(this.picBig);
             this.Controls.Add(this.chkVisible);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.grbAction);
@@ -247,6 +276,8 @@
             this.grbColor.ResumeLayout(false);
             this.grbColor.PerformLayout();
             this.grbAction.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picBig)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSmall)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,6 +301,8 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnDisplay;
         private System.Windows.Forms.CheckBox chkVisible;
+        private System.Windows.Forms.PictureBox picBig;
+        private System.Windows.Forms.PictureBox picSmall;
     }
 }
 
