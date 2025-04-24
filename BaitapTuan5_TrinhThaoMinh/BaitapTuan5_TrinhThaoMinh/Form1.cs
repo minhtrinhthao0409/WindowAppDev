@@ -32,15 +32,23 @@ namespace BaitapTuan5_TrinhThaoMinh
             cntt.DsLop.Add(lop1);
 
             Lop lop2 = new Lop { TenLop = "Class 111-22-222" };
+            lop2.DsSinhVien.Add(new SinhVien { ID = 109, HoTen = "Full name #9", Email = "email9@ueh.edu.vn" });
             cntt.DsLop.Add(lop2);
+
 
             Khoa ketoan = new Khoa { TenKhoa = "Khoa Kế toán" };
             Lop lop3 = new Lop { TenLop = "Class 222-33-111" };
             lop3.DsSinhVien.Add(new SinhVien { ID = 107, HoTen = "Full name #7", Email = "email7@ueh.edu.vn" });
             ketoan.DsLop.Add(lop3);
 
+            Khoa taiChinh = new Khoa { TenKhoa = "Khoa Tài chính - Ngân hàng" };
+            Lop lop4 = new Lop { TenLop = "Class 333-44-111" };
+            lop4.DsSinhVien.Add(new SinhVien { ID = 108, HoTen = "Full name #8", Email = "email8@ueh.edu.vn" });
+            taiChinh.DsLop.Add(lop4);
+
             dsKhoa.Add(cntt);
             dsKhoa.Add(ketoan);
+            dsKhoa.Add(taiChinh);
 
             LoadTreeView();
         }
@@ -48,10 +56,10 @@ namespace BaitapTuan5_TrinhThaoMinh
         private void LoadTreeView()
         {
             treeView1.Nodes.Clear();
-            foreach (var khoa in dsKhoa)
+            foreach (Khoa khoa in dsKhoa)
             {
                 TreeNode nodeKhoa = new TreeNode(khoa.TenKhoa);
-                foreach (var lop in khoa.DsLop)
+                foreach (Lop lop in khoa.DsLop)
                 {
                     TreeNode nodeLop = new TreeNode(lop.TenLop) { Tag = lop };
                     nodeKhoa.Nodes.Add(nodeLop);
