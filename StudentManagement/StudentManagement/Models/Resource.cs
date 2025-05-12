@@ -23,5 +23,8 @@ namespace StudentManagement
         public ResourceType Type { get; set; }
 
         public string Url { get; set; }
+
+        public int CourseId { get; set; }
+        public Course Course { get; set; }
     }
 }

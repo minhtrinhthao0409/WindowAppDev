@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentManagement
 {
-    internal class Students
+    public class Student
     {
         public int Id { get; set; }
 
@@ -18,6 +18,7 @@ namespace StudentManagement
 
         public DateTime? Birthday { get; set; }
 
-        public ICollection<Homework> Homeworks { get; set; } = new List<Homework>();
+        public ICollection<StudentCourse> StudentCourses { get; set; } = new List<StudentCourse>();
+        public ICollection<Homework> HomeworkSubmissions { get; set; } = new List<Homework>();
     }
 }

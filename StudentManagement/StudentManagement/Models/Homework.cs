@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentManagement
 {
-    internal class Homework
+    public class Homework
     {
         public int Id { get; set; }
         public string Content { get; set; } = null!;
@@ -14,6 +14,9 @@ namespace StudentManagement
         public DateTime SubmissionDate { get; set; }
 
         public int StudentId { get; set; }
-        public Students Student { get; set; } = null!;
+        public Student Student { get; set; } = null!;
+
+        public int CourseId { get; set; }
+        public Course Course { get; set; }
     }
 }
