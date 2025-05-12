@@ -1,9 +1,15 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+
 namespace StudentManagement_
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             using var context = new StudentDbContext();
 
@@ -52,11 +58,13 @@ namespace StudentManagement_
             .OrderByDescending(c => c.ResourceCount)
             .ThenByDescending(c => c.Name); // hoặc StartDate nếu cần
 
-                    foreach (var course in courses_)
-                    {
-                        Console.WriteLine($"Course: {course.Name}, Resources: {course.ResourceCount}");
-                    }
-
-                }
+            foreach (var course in courses_)
+            {
+                Console.WriteLine($"Course: {course.Name}, Resources: {course.ResourceCount}");
             }
+
+        }
+
+    }
 }
+

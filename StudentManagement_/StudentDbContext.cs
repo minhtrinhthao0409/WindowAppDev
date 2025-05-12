@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using StudentManagement_.Model;
+using StudentManagement_.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +22,7 @@ namespace StudentManagement_
         {
             var folder = Environment.SpecialFolder.LocalApplicationData;
             var path = Environment.GetFolderPath(folder);
-            DbPath = System.IO.Path.Join(path, "studentsystem.db");
+            DbPath = System.IO.Path.Join(path, "studentManagementSystem.db");
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)

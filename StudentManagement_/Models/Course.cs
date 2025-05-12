@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudentManagement_.Model
+
+namespace StudentManagement_.Models
 {
     public class Course
     {
@@ -19,8 +20,8 @@ namespace StudentManagement_.Model
         public DateTime EndDate { get; set; }
         public decimal Price { get; set; }
 
-        public ICollection<StudentCourse> StudentCourses { get; set; } = new List<StudentCourse>();
-        public ICollection<Resource> Resources { get; set; } = new List<Resource>();
-        public ICollection<Homework> HomeworkSubmissions { get; set; } = new List<Homework>();
+        public ICollection<StudentCourse> StudentCourses { get; set; } = [];
+        public ICollection<Resource> Resources { get; set; } = [];
+        public ICollection<Homework> HomeworkSubmissions { get; set; } = [];
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudentManagement_
+namespace StudentManagement_.Models
 {
     public class Student
     {
@@ -18,7 +18,7 @@ namespace StudentManagement_
 
         public DateTime? Birthday { get; set; }
 
-        public ICollection<StudentCourse> StudentCourses { get; set; } = new List<StudentCourse>();
-        public ICollection<Homework> HomeworkSubmissions { get; set; } = new List<Homework>();
+        //public ICollection<StudentCourse> StudentCourses { get; set; } = new List<StudentCourse>();
+        //public ICollection<Homework> HomeworkSubmissions { get; set; } = new List<Homework>();
     }
 }
