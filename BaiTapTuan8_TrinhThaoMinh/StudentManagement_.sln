@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManagement_", "StudentManagement_.csproj", "{284FB165-E821-69A2-BCF2-23F11D695184}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialNetwork", "..\SocialNetwork\SocialNetwork.csproj", "{C6A918E4-FA38-40A2-B83C-261BF79DF41E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{284FB165-E821-69A2-BCF2-23F11D695184}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{284FB165-E821-69A2-BCF2-23F11D695184}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{284FB165-E821-69A2-BCF2-23F11D695184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6A918E4-FA38-40A2-B83C-261BF79DF41E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6A918E4-FA38-40A2-B83C-261BF79DF41E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6A918E4-FA38-40A2-B83C-261BF79DF41E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6A918E4-FA38-40A2-B83C-261BF79DF41E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
