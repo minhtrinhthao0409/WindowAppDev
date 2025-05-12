@@ -18,7 +18,7 @@ namespace StudentManagement_.Models
 
         public DateTime? Birthday { get; set; }
 
-        //public ICollection<StudentCourse> StudentCourses { get; set; } = new List<StudentCourse>();
-        //public ICollection<Homework> HomeworkSubmissions { get; set; } = new List<Homework>();
+        public ICollection<StudentCourse> StudentCourses { get; set; } = [];
+        public ICollection<Homework> HomeworkSubmissions { get; set; } = [];
     }
 }
