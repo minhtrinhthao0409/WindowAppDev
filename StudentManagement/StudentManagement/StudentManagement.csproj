@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>StudentManagement</RootNamespace>
     <AssemblyName>StudentManagement</AssemblyName>
-    <LangVersion>8.0</LangVersion>
+    <TargetFramework>net8.0</TargetFramework>
     <!-- hoặc 9.0, 10.0 tùy bạn -->
     <Nullable>enable</Nullable>
     <FileAlignment>512</FileAlignment>
